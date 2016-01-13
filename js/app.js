@@ -3,262 +3,100 @@
 
 var timeOfDay = ['6:00 am','7:00 am','8:00 am','9:00 am','10:00 am','11:00 am','12:00 pm','1:00 pm','2:00 pm','3:00 pm','4:00  pm','5:00 pm','6:00 pm','7:00 pm', '8:00 pm']
 
-//stores
+//html
 
-//pike place
 
-// function Student(firstName, lastInitial, hairStyle) {
-//   this.course = '201d5';
-//   this.firstName = firstName;
-//   this.lastInitial = lastInitial;
-//   this.hairStyle = hairStyle;
-//   this.intro = function() {
-//     console.log('My name is ' + this.firstName + ' and my last initial is ' + this.lastInitial);
-//   }
-
-  function Store(name, minCustHour, maxCustHr, aveCupsCust, aveLbsCust, cupsPerHour,)
+function Store(name, minCustHour, maxCustHr, aveCupsCust, aveLbsCust) {
   this.name = name;
   this.minCustHr = minCustHour;
   this.maxCustHr = maxCustHr;
-  this.cupsPerHour[] = cupsPerHour;
-  this.
   this.aveCupsCust = aveCupsCust;
   this.aveLbsCust = aveLbsCust;
-  this.randomNum = function() {
-    return Math.floor((Math.random()) * (this.maxCustHr - this.minCustHr +1) + this.minCustHr);
+  this.hourlyCust = [];
+  this.hourlyCups = [];
+  this.hourlyLbs = [];
+  this.cupsToLbs = [];
+  this.totalLbs = [];
+  this.totalCust = [];
+
+  this.generateHourlyCust = function() {
+    for(var i = 0; i > timeOfDay.length; i++) {
+    hourlyCust.push(Math.floor((Math.random()) * (this.maxCustHr - this.minCustHr +1) + this.minCustHr));
+    }
   };
-  this.cups = function() {
-    return Math.floor(this.aveCupsCust * this.randomNum);
+  this.generateHourlyCups = function() {
+    for(var i = 0; i > timeOfDay.length; i++) {
+    this.hourlyCups.push(Math.floor(this.aveCupsCust * this.hourlyCust));
+    }
   };
-  this.lbs = function() {
-    return Math.floor(this.aveLbsCust * this.randomNum);
+  this.generateHourlyLbs = function() {
+    for(var i = 0; i > timeOfDay.length; i++) {
+    this.hourlyLbs.push(Math.floor(this.aveLbsCust * this.hourlyCust));
+    }
   };
-  this.cupsToLbs = function() {
-    return Math.floor(this.cups / 20);
+  this.generateCupsToLbs = function() {
+    for(var i = 0; i > timeOfDay.length; i++) {
+    this.cupsToLbs.push(Math.floor(this.cups / 20));
+    }
   };
-  this.totalLbs = function() {
-    return Math.floor(this.cupsToLbs + this.lbs);
+  this.generateTotalLbs = function() {
+    this.totalLbs.push(Math.floor(this.cupsToLbs + this.lbs));
+
+  };
+}
+  this.render = function() {
+      this.generateHourlyCust.push();
+      this.generateHourlyCups.push();
+      this.generateHourlylbs.push();
+      this.timeOfDay.push();
 };
-  }
-// create instances
-var pike = new Store('Pike Place Market', 14, 55, 1.2, 3.7);
-var
 
-// add a method by modifying the prototype
+var pke = new Store('Pike Place Market', 14, 55, 1.2, 3.7);
+var cap = new Store('Capitol Hill',32 ,48, 3.2, 0.4);
+var spl = new Store('Seattle Public Library',49, 75, 2.6, 0.2);
+var slu = new Store('South Lake Union',35, 88, 1.3, 3.7);
+var sta = new Store('Sea-Tac Airport',68, 124, 1.1, 2.7);
+var web = new Store('Website Sales',3, 6, 0, 6.7);
 
+// pke.render();
+function renderHour() {
 
-  // render: function() {
-  //   this.hourlyCustomers();
-  //   this.generateHourlyCups();
-  //   this.generateHourlyBeansByLb();
-  //
-  //   var ulEl = document.createElement('ul');
-  //   ulEl.appendChild(document.createTextNode(this.name));
-  //   var sectionEl = document.getElementById('kiosk-data').appendChild(ulEl);
-  //
-  //   for (var i = 0; i < hours.length; i++) {
-  //     var liEl = document.createElement('li');
-  //     //6:00am: 86.5 lbs [23 customers, 27.6 cups (1.4 lbs), 85.1 lbs to-go]
-  //     liEl.textContent = hours[i] + ": " + this.allDailyBeans + ' [' + this.hourlyCust[i] + ' customers, ' + this.dailyCups + ' cups (' + (this.dailyCups / 20) + '), ' + this.dailyBeansByLb + ' lbs to-go]';
-  //     ulEl.appendChild(liEl);
-
-Student.prototype.warCry = function() {
-  console.log('Woooo!!!!');
+  var sectEl = document.getElementById('test');
+  var tblEL = document.createElement('table');
+  var trEl = document.createElement('tr');
+  var h1El = document.createElement('h1');
+  var thEl = document.createElement('th');
+for var(i = 0; i < timeOfDay.length; i++) {
+  thEl.textContent = timeOfDay[i];
+  trEl.appendChild(thEl);
+  };
 }
 
 
-var h1ElPke = document.createElement('h1');
-h1ElPke.textContent = 'Pike Place Market';
-document.body.appendChild(h1ElPke);
-var randomNum;
-var cups;
-var lbs;
-var cupsToLbs;
-var totalLbs;
 
-for(var i=0; i < timeOfDay.length; i++) {
-var pike = {
-  name:'Pike Place Market',
-  minCustHr:14,
-  maxCustHr:55,
-  aveCupsCust:1.2,
-  aveLbsCust:3.7,
-checkBeans: function() {
-  randomNum = Math.floor((Math.random()) * (this.maxCustHr - this.minCustHr +1) + this.minCustHr);
-  lbs = Math.floor(this.aveLbsCust * randomNum);
-  cupsToLbs = Math.floor(cups / 20);
-  totalLbs = Math.floor(cupsToLbs + lbs);
-  }
-}
-//method pike
-pike.checkBeans();
-var h1ElPke = document.createElement('h1');
-h1ElPke.textContent = 'Pike Place Market';
-document.body.appendChild(h1ElPke);
-var ulEl = document.createElement('li');
-ulEl.textContent = timeOfDay[i] + ': ' + totalLbs + ' lbs [' + randomNum + ' customers, ' + cups + ' cups (' + cupsToLbs + ' lbs), ' + lbs + ' to-go]';
-document.body.appendChild(ulEl);
-}
-
-//cap Hill store
-var h1ElCap = document.createElement('h1');
-h1ElCap.textContent = 'Capitol Hill';
-document.body.appendChild(h1ElCap);
-var randomNum;
-var cups;
-var lbs;
-var cupsToLbs;
-var totalLbs;
-for(var j=0; j < timeOfDay.length; j++) {
-var cap = {
-  name: 'Capitol Hill',
-  minCustHr:32,
-  maxCustHr:48,
-  aveCupsCust:3.2,
-  aveLbsCust:0.4,
-//function
-  checkBeans: function(){
-    randomNum = Math.floor((Math.random()) * (this.maxCustHr - this.minCustHr +1) + this.minCustHr);
-    cups = Math.floor(this.aveCupsCust * randomNum);
-
-  }
-}
-//method
-cap.checkBeans();
-var ulEl = document.createElement('li');
-ulEl.textContent = timeOfDay[j] + ': ' + totalLbs + ' lbs [' + randomNum + ' customers, ' + cups + ' cups (' + cupsToLbs + ' lbs), ' + lbs + ' to-go]';
-document.body.appendChild(ulEl);
-}
-//END
-
-//spl
-var h1ElSpl = document.createElement('h1');
-h1ElSpl.textContent = 'Seattle Public Library';
-document.body.appendChild(h1ElSpl);
-var randomNum;
-var cups;
-var lbs;
-var cupsToLbs;
-var totalLbs;
-//loop
-for(var k =0; k < timeOfDay.length; k++) {
-var spl = {
-  name: 'Seattle Public Library',
-  minCustHr:49,
-  maxCustHr:75,
-  aveCupsCust:2.6,
-  aveLbsCust:0.2,
-//function
-  checkBeans: function(){
-    randomNum = Math.floor((Math.random()) * (this.maxCustHr - this.minCustHr +1) + this.minCustHr);
-    cups = Math.floor(this.aveCupsCust * randomNum);
-    lbs = Math.floor(this.aveLbsCust * randomNum);
-    cupsToLbs = Math.floor(cups / 20);
-    totalLbs = Math.floor(cupsToLbs + lbs);
-  }
-}
-//method
-spl.checkBeans();
-  var ulEl = document.createElement('li');
-  ulEl.textContent = timeOfDay[k] + ': ' + totalLbs + ' lbs [' + randomNum + ' customers, ' + cups + ' cups (' + cupsToLbs + ' lbs), ' + lbs + ' to-go]';
-  document.body.appendChild(ulEl);
-}
-//END//
-
-//slu
-var h1ElSlu = document.createElement('h1');
-h1ElSlu.textContent = 'South Lake Union';
-document.body.appendChild(h1ElSlu);
-var randomNum;
-var cups;
-var lbs;
-var cupsToLbs;
-var totalLbs;
-
-for(var l =0; l < timeOfDay.length; l++) {
-var slu = {
-  name: 'South Lake Union',
-  minCustHr:35,
-  maxCustHr:88,
-  aveCupsCust:1.3,
-  aveLbsCust:3.7,
-  checkBeans: function(){
-    randomNum = Math.floor((Math.random()) * (this.maxCustHr - this.minCustHr +1) + this.minCustHr);
-    cups = Math.floor(this.aveCupsCust * randomNum);
-    lbs = Math.floor(this.aveLbsCust * randomNum);
-    cupsToLbs = Math.floor(cups / 20);
-    totalLbs = Math.floor(cupsToLbs + lbs);
-  }
-}
-  slu.checkBeans();
-  var ulEl = document.createElement('li');
-  ulEl.textContent = timeOfDay[l] + ': ' + totalLbs + ' lbs [' + randomNum + ' customers, ' + cups + ' cups (' + cupsToLbs + ' lbs), ' + lbs + ' to-go]';
-  document.body.appendChild(ulEl);
-}
-//END//
-
-//sta
-var h1ElSta = document.createElement('h1');
-h1ElSta.textContent = 'Sea-Tac Airport';
-document.body.appendChild(h1ElSta);
-var randomNum;
-var cups;
-var lbs;
-var cupsToLbs;
-var totalLbs;
-
-for(var m =0; m < timeOfDay.length; m++) {
-var sta = {
-name:'Sea-Tac Airport',
-minCustHr:68,
-maxCustHr:124,
-aveCupsCust:1.1,
-aveLbsCust:2.7,
-checkBeans: function(){
-  randomNum = Math.floor((Math.random()) * (this.maxCustHr - this.minCustHr +1) + this.minCustHr);
-  cups = Math.floor(this.aveCupsCust * randomNum);
-  lbs = Math.floor(this.aveLbsCust * randomNum);
-  cupsToLbs = Math.floor(cups / 20);
-  totalLbs = Math.floor(cupsToLbs + lbs);
-  }
-}
-sta.checkBeans();
-var ulEl = document.createElement('li');
-ulEl.textContent = timeOfDay[m] + ': ' + totalLbs + ' lbs [' + randomNum + ' customers, ' + cups + ' cups (' + cupsToLbs + ' lbs), ' + lbs + ' to-go]';
-document.body.appendChild(ulEl);
-  }
-//END//
-
-//web
-var h1ElWeb = document.createElement('h1');
-h1ElWeb.textContent = 'Website Sales';
-document.body.appendChild(h1ElWeb);
-var randomNum;
-var cups;
-var lbs;
-var cupsToLbs;
-var totalLbs;
-
-for(var n =0; n < timeOfDay.length; n++) {
-var web = {
-  name:'Website Sales',
-  minCustHr:3,
-  maxCustHr:6,
-  aveCupsCust:0,
-  aveLbsCust:6.7,
-  checkBeans: function(){
-    randomNum = Math.floor((Math.random()) * (this.maxCustHr - this.minCustHr +1) + this.minCustHr);
-    cups = Math.floor(this.aveCupsCust * randomNum);
-    lbs = Math.floor(this.aveLbsCust * randomNum);
-    cupsToLbs = Math.floor(cups / 20);
-    totalLbs = Math.floor(cupsToLbs + lbs);
-
-  }
-}
-  web.checkBeans();
-  var ulEl = document.createElement('li');
-ulEl.textContent = timeOfDay[n] + ': ' + totalLbs + ' lbs [' + randomNum + ' customers, ' + cups + ' cups (' + cupsToLbs + ' lbs), ' + lbs + ' to-go]';
-  document.body.appendChild(ulEl);
-  }
-
-// // //end store vars
+//
+// var h1ElSpl = document.createElement('h1');
+// h1ElSpl.textContent = 'Seattle Public Library';
+// document.body.appendChild(h1ElSpl);
+//
+// var ulEl = document.createElement('li');
+//   ulEl.textContent = timeOfDay[i] + ': ' + totalLbs + ' lbs [' + randomNum + ' customers, ' + cups + ' cups (' + cupsToLbs + ' lbs), ' + lbs + ' to-go]';
+//   document.body.appendChild(ulEl);
+//
+// var h1ElSpl = document.createElement('h1');
+// h1ElSpl.textContent = 'Seattle Public Library';
+// document.body.appendChild(h1ElSpl);
+//
+//
+// // Loop through the months array, one index at a time
+// for (var i = 0; i < timeOfDay.length; i++) {
+//   // For each iteration of the loop; Create an LI element <li></li>
+//   var tdEl = document.createElement('td');
+//   // For each LI element; Assign the contents of the array[i] to the LI's text content
+//   tdEl.textContent = timeOfDay[i];
+//
+//   trEl.appendChild(tdEl);
+//
+// h1El.textContent = Store;
+// document.body.appendChild(h1El);
+//   };
