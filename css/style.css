@@ -17,15 +17,31 @@ body {
   overflow: auto;}
 header {
   height: 160px;
+  width: 90%;
+  margin: 10px 20px 10px 80px;
   background-color: #588c73;
-  background-image: url("img/campfire-coffee.jpg");}
-h1 {
-  color: inherit;
-  text-indent: 40px;
-  width: 940px;
-  height: 130px;
-  margin: 0px;}
-h2 {
+  position: center;
+  background-image: url("img/campfire-coffee.jpg")
+  ;}
+header.align-center{
+  display: block;
+  margin: 0px auto;
+}
+.company {
+  position: relative;
+  text-align: center;
+  font-size: 3.5em;
+  color: #d96459 ;
+  z-index: 1;
+  font-family: Arial;}
+
+.slogan {
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: white ;
+  z-index: 1;
+  font-family: Arial;}
 
 }
 nav.footer {
@@ -46,12 +62,31 @@ nav li a:hover, nav li a.current {
   color:red;}
 
 .mission {
+  float: left;
+}
+.headLinks {
+  text-align: center;
+}
+.aboutSection {
+  border: 5px solid #588c73;
+  margin-left: 80px;
+  width: 250px;
+  text-align: center;
+}
+.mission {
+  border: 5px solid #588c73;
+  margin-left: 80px;
+  width: 250px;
+  text-align: center;
+  float: center;
+}
+
+
+aside {
   float: right;
 }
 
 
-
-
-.logo {
+/*.logo {
   float: left;
-}
+}*/
