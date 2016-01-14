@@ -2,10 +2,13 @@
 body {
   width: 90%;
   margin: 0 auto;
+  font-family: Arial;
   color: #d96459;
-  background-color: #f2ae72;
-  background-image: url("img/campfire.jpg");
+  background-color: #a68572;
+
   background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.4em;
   margin: 0px;}
@@ -17,15 +20,36 @@ body {
   overflow: auto;}
 header {
   height: 160px;
+  width: 90%;
+  margin: 10px 20px 10px 80px;
   background-color: #588c73;
-  background-image: url("img/campfire-coffee.jpg");}
-h1 {
-  color: inherit;
-  text-indent: 40px;
-  width: 940px;
-  height: 130px;
-  margin: 0px;}
-h2 {
+  border: 10px solid #d96459;
+  background-image: url("https://github.com/lwenke01/campfire-coffee/blob/master/img/campfire.jpg?raw=true");
+  background-size:cover;
+  background-position:bottom;
+background-attachment: scroll;}
+header.align-center{
+  display: block;
+  margin: 0px auto;
+}
+header h1 {
+  position: relative;
+  text-align: center;
+  background: transparent url(campfire.jpg) no-repeat top left;
+  font-size: 3.5em;
+  color: #d96459 ;
+  z-index: 1;
+  font-family: Arial;}
+
+
+
+header h2 {
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: white ;
+  z-index: 1;
+  font-family: Arial;}
 
 }
 nav.footer {
@@ -40,18 +64,78 @@ nav li {
   margin-right: 40px;}
 
 nav li a {
-  color: black;}
+  color: #f2ae72;}
 
 nav li a:hover, nav li a.current {
-  color:red;}
+  color: #f2ae72;}
 
 .mission {
+  float: left;
+}
+.headLinks {
+  text-align: center;
+}
+.aboutSection {
+
+  background-color: #f2ae72;
+  border: 5px solid #588c73;
+  margin: 10px 20px 10px 80px;
+  width: 90%;
+  text-align: center;
+  font-family: Arial;
+  display: block;
+}
+.mission {
+  border: 5px solid #588c73;
+  margin-left: 80px;
+  width: 250px;
+  text-align: center;
+  float: center;}
+
+  .headLinks {
+    font-family: Arial;
+  }
+
+ul > li {
+  color: #588c73;
+}
+
+.ourPartners p {
+    font-size: 1px;
+    color: white;
+    background: transparent url(campfire.jpg) no-repeat top left;
+    width: 449px;
+    padding: 10px 0px 0px 5px;
+    float: left;
+    height: 268px;
+    height: 258px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+aside {
   float: right;
 }
 
 
-
-
-.logo {
+/*.logo {
   float: left;
+}*/
+table {
+    border-collapse: collapse;
+    background-color: white;
+    font-family: Arial;
+
+}
+
+table, th, td {
+   border: 1px solid black;
+   color: black;
+
+}
+th {
+  color: white ;
+  background-color: black;
+  text-align: left;
 }
