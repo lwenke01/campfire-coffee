@@ -97,17 +97,21 @@ function Store(name, minCustHour, maxCustHr, aveCupsCust, aveLbsCust) {
 
   }
     var sectEl = document.getElementById('test');
+
     var tblEl = document.createElement('table');
+      // var tblEl = document.getElementsByClassName('you');
     var trEl = document.createElement('tr');
+      // trEl = document.getElementsByClassName('hot');
     var thEl = document.createElement('th');
     thEl.textContent = 'Store';
     trEl.appendChild(thEl);
-    for(var i = 0; i < timeOfDay.length; i++){
+    for(var i = 0; i < timeOfDay.length; i++) {
       var tdEl = document.createElement('th');
       tdEl.textContent = timeOfDay[i];
       trEl.appendChild(tdEl);
 }
     tdEl = document.createElement('th');
+      // tdEl.className = 'for'
     tdEl.textContent = 'Total';
     trEl.appendChild(tdEl);
     tblEl.appendChild(trEl);
@@ -127,6 +131,15 @@ slu.render();
 sta.render();
 web.render();
 
-
-
   sectEl.appendChild(tblEl);
+
+
+//CompanySite - header
+// //declare variables
+// var sectEl_1 = document.getElementById('customerSite');
+// //h1
+// var h1El_1 = document.createElement('h1');
+// h1El_1.textContent = 'Campfire Coffee';
+// trEl.appendChild(thEl);
+// var position1 = document.getElementsByTagName('ul')[0];
+// position1.appendChild(h1text_1);
