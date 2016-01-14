@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Data Sheet</title>
-  <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/Skeleton.css">
-      <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <meta charset="UTF-8">
+    <title>Data Sheet</title>
+    <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/Skeleton.css">
+        <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
+
+    <h2>Use this form to create a new store</h2>
+
+    <!-- New Store Form -->
+    <form id="add-new-stores">
+      <fieldset>
+        <legend>Create New Coffee Shop</legend>
+
+        <br>
+
+        <label for "new-shop-name">Name of New Shop:</label>
+        <input name="new-shop-name" type="text" size="25">
+
+        <br>
+
+        <label for "max-cust">Maximum Expected Customers per Hour:</label>
+        <input name="max-cust" type="text" size="25">
+
+        <br>
+
+        <label for "min-cust">Minimum Expected Customers per Hour:</label>
+        <input name="min-cust" type="text" size="25">
+
+        <br>
+
+        <label for "avg-cups">Average Cups Sold per Hour:</label>
+        <input name="avg-cups" type="text" size="25">
+
+        <br>
+
+        <label for "avg-lbs">Average Lbs. of Beans Sold per Hour:</label>
+        <input name="avg-lbs" type="text" size="25">
+
+      </fieldset>
+    </form>
+
+    <br>
+
     <section id='test'></section>
 
   <script type="text/javascript" src="js/app.js"></script>
