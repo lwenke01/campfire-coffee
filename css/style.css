@@ -1,0 +1,57 @@
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  color: #d96459;
+  background-color: #f2ae72;
+  background-image: url("img/campfire.jpg");
+  background-position: center;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.4em;
+  margin: 0px;}
+/*.wrapper {
+  width: 720px;
+  margin: 0px auto;}*/
+
+.content {
+  overflow: auto;}
+header {
+  height: 160px;
+  background-color: #588c73;
+  background-image: url("img/campfire-coffee.jpg");}
+h1 {
+  color: inherit;
+  text-indent: 40px;
+  width: 940px;
+  height: 130px;
+  margin: 0px;}
+h2 {
+
+}
+nav.footer {
+  clear: both;
+  color: black;
+  background-color: inherit;}
+nav ul {
+  margin: 0px;
+  padding: 5px 0px 5px 30px;}
+nav li {
+  display: inline;
+  margin-right: 40px;}
+
+nav li a {
+  color: black;}
+
+nav li a:hover, nav li a.current {
+  color:red;}
+
+.mission {
+  float: right;
+}
+
+
+
+
+.logo {
+  float: left;
+}
