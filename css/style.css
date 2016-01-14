@@ -122,3 +122,20 @@ aside {
 /*.logo {
   float: left;
 }*/
+table {
+    border-collapse: collapse;
+    background-color: white;
+    font-family: Arial;
+
+}
+
+table, th, td {
+   border: 1px solid black;
+   color: black;
+
+}
+th {
+  color: white ;
+  background-color: black;
+  text-align: left;
+}
