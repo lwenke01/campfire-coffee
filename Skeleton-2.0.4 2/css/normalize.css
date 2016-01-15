@@ -51,23 +51,23 @@ summary {
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
 
-audio,
+/*audio,
 canvas,
 progress,
 video {
   display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-}
+
+/*}*/
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
 
-audio:not([controls]) {
+/*audio:not([controls]) {
   display: none;
   height: 0;
-}
+}*/
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
