@@ -139,3 +139,17 @@ th {
   background-color: black;
   text-align: left;
 }
+
+.input-store-data {
+  width: 90%;
+  margin: 0 auto;
+  font-family: Arial;
+  color: black;
+  background-color: #a68572;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.4em;
+  margin: 0px;}
+}
