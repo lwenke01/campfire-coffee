@@ -124,7 +124,7 @@ web.render();
   var newStore = new Store(name, minCustHour, maxCustHr, aveCupsCust, aveLbsCust);
 
   formData.push(newStore);
-  newStore.render();
+  formData.render();
 
   event.target.newShopName.value = null;
   event.target.minCust.value = null;
