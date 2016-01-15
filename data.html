@@ -3,45 +3,47 @@
   <head>
     <meta charset="UTF-8">
     <title>Data Sheet</title>
-    <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/Skeleton.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/Skeleton.css"> -->
         <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
-
-    <h2>Use this form to create a new store</h2>
+    <form id="add-new-stores">
+      <h2 class ="h2-form">Use this form to create a new store</h2>
 
     <!-- New Store Form -->
-    <form id="add-new-stores">
-      <fieldset>
+
+      <fieldset class="input-store-data">
         <legend>Create New Coffee Shop</legend>
 
         <br>
 
-        <label for "new-shop-name">Name of New Shop:</label>
-        <input name="new-shop-name" type="text" size="25">
+        <label for "newShopName">Name of New Shop:</label>
+        <input name="newShopName" type="text" size="25">
 
         <br>
 
-        <label for "max-cust">Maximum Expected Customers per Hour:</label>
-        <input name="max-cust" type="text" size="25">
+        <label for "maxCust">Maximum Expected Customers per Hour:</label>
+        <input name="maxCust" type="text" size="25">
 
         <br>
 
-        <label for "min-cust">Minimum Expected Customers per Hour:</label>
-        <input name="min-cust" type="text" size="25">
+        <label for "minCust">Minimum Expected Customers per Hour:</label>
+        <input name="minCust" type="text" size="25">
 
         <br>
 
-        <label for "avg-cups">Average Cups Sold per Hour:</label>
-        <input name="avg-cups" type="text" size="25">
+        <label for "avgCups">Average Cups Sold per Hour:</label>
+        <input name="avgCups" type="text" size="25">
 
         <br>
 
-        <label for "avg-lbs">Average Lbs. of Beans Sold per Hour:</label>
-        <input name="avg-lbs" type="text" size="25">
+        <label for "avgLbs">Average Lbs. of Beans Sold per Hour:</label>
+        <input name="avgLbs" type="text" size="25">
 
+        <br>
+         <button id="comment-button" type="submit">Add New Info!</button>
       </fieldset>
     </form>
 
@@ -50,5 +52,6 @@
     <section id='test'></section>
 
   <script type="text/javascript" src="js/app.js"></script>
+    <!-- <script type="text/javascript" src="js/chat.js"></script> -->
   </body>
 </html>
