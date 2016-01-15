@@ -105,14 +105,35 @@ sta.render();
 web.render();
 
   sectEl.appendChild(tblEl);
+//form
+  var newStoreForm = document.getElementById('add-new-stores');
+  var formData = [];
+  //define event handler
+  function addNewStores(event) {
+    console.log(event);
+    event.preventDefault();
 
 
-//CompanySite - header
-// //declare variables
-// var sectEl_1 = document.getElementById('customerSite');
-// //h1
-// var h1El_1 = document.createElement('h1');
-// h1El_1.textContent = 'Campfire Coffee';
-// trEl.appendChild(thEl);
-// var position1 = document.getElementsByTagName('ul')[0];
-// position1.appendChild(h1text_1);
+  var name = event.target.newShopName.value;
+  var minCustHour = parseInt(event.target.minCust.value);
+  var maxCustHr = parseInt(event.target.maxCust.value);
+  var aveCupsCust = parseInt(event.target.aveCups.value);
+  var aveLbsCust = parseInt(event.target.aveLbs.value);
+  // console.log(kiosks);
+
+  var newStore = new Store(name, minCustHour, maxCustHr, aveCupsCust, aveLbsCust);
+
+  formData.push(newStore);
+  newStore.render();
+
+  event.target.newShopName.value = null;
+  event.target.minCust.value = null;
+  event.target.maxCust.value = null;
+  event.target.aveCups.value = null;
+  event.target.aveLbs.value = null;
+
+  }
+
+  // event listener for 'add store button'
+  newStoreForm.addEventListener('comment-button', addNewStores);
+//
