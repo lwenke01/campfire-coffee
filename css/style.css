@@ -1,14 +1,7 @@
 
 body {
   width: 80%;
-/*   margin: 0 auto; */
-  /*font-family: Arial;*/
-/*   color: #d96459; */
-  background-color: #a68572;
-
-  /*background-position: center;*/
-  /*background-size: cover;*/
-  /*background-attachment: fixed;*/
+  background-color: #2b9464;
   font-family:'Cuprum', sans-serif;
   line-height: 1.4em;
   margin: 10px;}
@@ -20,34 +13,24 @@ body {
 .content {
   overflow: auto;}
 header {
-  height: 160px;
-  width: 100%;
-  margin: 10px 20px 10px 100px;
+  margin: 10px 10px 10px 100px;
   display: block;
-/* flex-direction: row;  */
-  background-color: #588c73;
-  border: 20px solid #37590B;
-  justify-content: center;
-  /*background-image: url("https://github.com/lwenke01/campfire-coffee/blob/master/img/campfire.jpg?raw=true");
-  background-size:cover;*/
+  justify-content: center;}
 
+img.logo {
+ margin: 10px 0px 0px 120px;}
 
-}
 header h1 {
   position: relative;
   text-align: center;
-/*   width: 100px; */
-  /*background: transparent url(campfire.jpg) no-repeat top left;*/
-  font-size: 3.5em;
-  font-family: 'Sigmar One', cursive;
-  color: #992E13;
   z-index: 1;}
 
 header h2 {
   position: relative;
   text-align: center;
+   margin: 0px 30px 30px 140px;
   font-size: 1.5em;
-  color: #992E13;
+  color: #bf8b18;
   z-index: 1;
   font-family: 'Pacifico',cursive;}
 
@@ -64,123 +47,157 @@ nav li {
   margin-right: 40px;}
 
 nav li a {
-  color: #A63214;}
+  color: #46434a;}
 
 nav li a:hover, nav li a.current {
   color: #A63214;}
 
-
-}
 .nav1 {
   text-align: center;
-  margin: 10px 20px 30px 0px;
- }
+  margin: 10px 20px 30px 0px;}
 
-/* .aboutSection, .history, .sustain {
-
-  background-color: #A63214;
-  border: 5px solid #A63214;
-  margin: 10px 10px 10px 40px;
-   width: 70%;
-  display: block;
-  text-align: center;} */
 .content {
  display: inline-flex;
- justify-content: center;
+ justify-content: center;}
 
-}
  a.camp1,.aboutSection {
-
-  background-color: #A63214;
-  border: 5px solid #A63214;
+   background-color: #bf8b18;
+  border: 5px solid #bf8b18;
   margin: 10px 0px 10px 10px;
   height:400px;
   width: 300px;
   display: flex;
   text-align: center;
   flex-direction: column;
-   padding: 50px;
-/*    background-image: url("https://github.com/lwenke01/campfire-coffee/blob/master/img/campfire.jpg?raw=true"); */
-  background-size:cover;
-/*    opacity: 0.5; */
-
- }
-.history {
-   background-color: #A63214;
-  border: 5px solid #A63214;
-  margin: 10px 0px 0px 10px;
-  height:400px;
-  width: 300px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
   padding: 50px;
-
+  background-size:cover;
 }
+  img.camp2 {
+ background-repeat: repeat-x;
+opacity: 0.5;
+/*  margin: 10px 0px 0px 10px; */
+  width: 300px;
+   height: 100px;
+  background-attachment: fixed;
+ display: flex;
+  text-align: center;
+  flex-direction: row;
+text-align:center;
+  display: cover;
+  flex-direction: column-reverse;
+  justify-content:center;}
 
- .sustain {
+img.camp1 {
+ background-repeat: repeat-x;
+opacity: 0.5;
+/*  margin: 10px 0px 0px 10px; */
+  width: 300px;
+   height: 100px;
+  background-attachment: fixed;
+ display: flex;
+  text-align: center;
+  flex-direction: row;
+text-align:center;
+  display: cover;
+  flex-direction: column-reverse;
+  justify-content:center;}
+.history {
 
-  background-color: #A63214;
+  background-color: #bf8b18;
 /*     opacity: 0.5; */
-  border: 5px solid #A63214;
+  border: 5px solid #bf8b18;
   margin: 10px 0px 0px 10px;
   width: 300px;
    height: 400px;
    display: flex;
   text-align: center;
   flex-direction: column;
-   padding: 50px;
+   padding:50px;
+float: center;}
 
-}
+ img.camp1 {
+ background-repeat: repeat-x;
+opacity: 0.5;
+/*  margin: 10px 0px 0px 10px; */
+  width: 300px;
+   height: 100px;
+  background-attachment: fixed;
+ display: flex;
+  text-align: center;
+  flex-direction: row;
+text-align:center;
+  display: cover;
+  flex-direction: column-reverse;
+  justify-content:center;}
+
+
+img.camp3 {
+ background-repeat: repeat-x;
+opacity: 0.5;
+/*  margin: 10px 0px 0px 10px; */
+  width: 300px;
+   height: 100px;
+  background-attachment: fixed;
+ display: flex;
+  text-align: center;
+  flex-direction: row;
+text-align:center;
+  display: cover;
+  flex-direction: column-reverse;
+  justify-content:center;}
+
+ .sustain {
+
+  background-color: #bf8b18;
+/*     opacity: 0.5; */
+  border: 5px solid #bf8b18;
+  margin: 10px 0px 0px 10px;
+  width: 300px;
+   height: 400px;
+   display: flex;
+  text-align: center;
+  flex-direction: column;
+   padding:50px;}
+
 ul > li {
-  font-color: #A63214;
+  color: #46434a;
   text-align:center;
   display: inline-flex;
   flex-direction: column-reverse;
-  justify-content:center;
-
-
-}
+  justify-content:center;}
 
 .headLinks {
- font-color: #A63214;
+ font-color: #6e0000;
   text-align:center;
   display: inline-flex;
   flex-direction: row;
    margin-center: 20px;
      padding-left: 400px;
+   margin: 10px 0px 30px 40px;}
 
-}
  .featuredproducts {
-
   background-color: #A63214;
   border: 5px solid #A63214;
   margin: 10px 0px 20px 20px;
   width: 160px;
-   height: 250px;
-   display: flex;
+  height: 250px;
+  display: flex;
   text-align: center;
   flex-direction: column;
-   padding: 0px;
-}
- .locations {
+   padding: 0px;}
 
-  background-color: #A63214;
-  border: 5px solid #A63214;
+ .locations {
+  background-color: #bf8b18;
+  border: 5px solid #bf8b18;
   margin: 10px 0px 20px 20px;
-  width: 80%;
-   height: 200px;
+  width: 300px;
+   height: 300px;
    display: flex-inline;
   text-align: center;
   flex-direction: row;
-   padding: 0px;
-}
-.sustain:hover {
- background-image: url("https://github.com/lwenke01/campfire-coffee/blob/master/img/campfire.jpg?raw=true"); }
+   padding: 10px;}
 
-/*.logo {
-  float: left;
-}*/
+
 
 /*TABLE*/
 
@@ -192,20 +209,16 @@ table {
     padding-left:20px;
     border-collapse: collapse;
     background-color: white;
-    font-family: Arial;
-
-}
+    font-family: Arial;}
 
 table, th, td {
    border: 1px solid black;
-   color: black;
+   color: black;}
 
-}
 th {
   color: white ;
   background-color: black;
-  text-align: left;
-}
+  text-align: left;}
 
 /*.datasheet {
   color: black;
