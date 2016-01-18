@@ -3,7 +3,7 @@
 
 var timeOfDay = ['6:00 am','7:00 am','8:00 am','9:00 am','10:00 am','11:00 am','12:00 pm','1:00 pm','2:00 pm','3:00 pm','4:00  pm','5:00 pm','6:00 pm','7:00 pm', '8:00 pm']
 var kiosks = [];
-var tbl;
+
 
 function Store(name, minCustHour, maxCustHr, aveCupsCust, aveLbsCust) {
   this.name = name;
@@ -123,26 +123,26 @@ web.render();
     event.preventDefault();
 
 
-  var name = event.target.newShopName.value;
-  var minCustHour = parseInt(event.target.minCust.value);
-  var maxCustHr = parseInt(event.target.maxCust.value);
-  var aveCupsCust = parseInt(event.target.aveCups.value);
-  var aveLbsCust = parseInt(event.target.aveLbs.value);
+    var name = event.target.newShopName.value;
+    var minCustHour = parseInt(event.target.minCust.value);
+    var maxCustHr = parseInt(event.target.maxCust.value);
+    var aveCupsCust = parseInt(event.target.aveCups.value);
+    var aveLbsCust = parseInt(event.target.aveLbs.value);
   // console.log(kiosks);
 
-  var newStore = new Store(name, minCustHour, maxCustHr, aveCupsCust, aveLbsCust);
+    var newStore = new Store(name, minCustHour, maxCustHr, aveCupsCust, aveLbsCust);
 
-  formData.push(newStore);
-  formData.render();
+    formData.push(newStore);
+    newStore.render();
 
-  event.target.newShopName.value = null;
-  event.target.minCust.value = null;
-  event.target.maxCust.value = null;
-  event.target.aveCups.value = null;
-  event.target.aveLbs.value = null;
+    event.target.newShopName.value = null;
+    event.target.minCust.value = null;
+    event.target.maxCust.value = null;
+    event.target.aveCups.value = null;
+    event.target.aveLbs.value = null;
 
-  }
+}
 
   // event listener for 'add store button'
-  newStoreForm.addEventListener('comment-button', addNewStores);
+  newStoreForm.addEventListener('submit', addNewStores);
 //

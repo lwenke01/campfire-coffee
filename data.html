@@ -3,45 +3,65 @@
   <head>
     <meta charset="UTF-8">
     <title>Data Sheet</title>
-    <link rel="stylesheet" href="Skeleton-2.0.4 2/css/normalize.css">
-      <link rel="stylesheet" href="Skeleton-2.0.4 2/css/Skeleton.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cuprum|Sigmar+One|Jura' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="Skeleton-2.0.4 2/css/normalize.css">
+      <link rel="stylesheet" href="Skeleton-2.0.4 2/css/Skeleton.css"> -->
         <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
     <div class="dataPage">
+        <header>
+        <h1><img src="https://github.com/lwenke01/campfire-coffee/blob/fri-morning-clean/img/camp3.png?raw=true" class="logo"></h1>
+        <h2>From the tent to the fire, it's our coffee you require</h2>
+      </header>
+    </section>
+    <section class="nav2">
+      <nav>
+          <ul class = "headLinks">
+            <li><a href = "index.html" >Home</a></li>
+            <li><a href = "products.html" >Our Online Shop</a></li>
+            <li><a href = "locations.html">Local Resources</a></li>
+            <li><a href = "data.html" class="current">Data</a></li>
+          </ul>
+        </nav>
+      </section>
 
-    <h2>Use this form to create a new store</h2>
+
+
+    <h2 class="formh2">Use this form to create a new store</h2>
 
     <!-- New Store Form -->
     <form id="add-new-stores">
-      <fieldset>
+      <fieldset class="form1">
         <legend>Create New Coffee Shop</legend>
 
         <br>
 
-        <label for "new-shop-name">Name of New Shop:</label>
-        <input name="new-shop-name" type="text" size="25">
+        <section class="data1">
+        <label for="newShopName" >Name of New Shop:</label>
+        <input name="newShopName" class="d1" type="text" size="25">
+        </section>
+
+
+        <label for="min-cust">Minimum Expected Customers per Hour:</label>
+        <input name="minCust" type="text" size="25">
 
         <br>
 
-        <label for "max-cust">Maximum Expected Customers per Hour:</label>
-        <input name="max-cust" type="text" size="25">
+        <label for="max-cust">Maximum Expected Customers per Hour:</label>
+        <input name="maxCust" type="text" size="25">
 
         <br>
 
-        <label for "min-cust">Minimum Expected Customers per Hour:</label>
-        <input name="min-cust" type="text" size="25">
+        <label for="avg-cups">Average Cups Sold per Customer:</label>
+        <input name="aveCups" type="text" size="25">
 
         <br>
 
-        <label for "avg-cups">Average Cups Sold per Hour:</label>
-        <input name="avg-cups" type="text" size="25">
-
-        <br>
-
-        <label for "avg-lbs">Average Lbs. of Beans Sold per Hour:</label>
-        <input name="avg-lbs" type="text" size="25">
+        <label for "avg-lbs">Average Lbs. of Beans Sold per Customer:</label>
+        <input name="aveLbs" type="text" size="25">
 
         <br>
          <button id="comment-button" type="submit">Add New Info!</button>
@@ -54,5 +74,9 @@
 
   <script type="text/javascript" src="js/app.js"></script>
 </div>
+  <footer> &copy; copyright 2016
+     Campfire Coffee Enterprise
+
+    </footer>
   </body>
 </html>
