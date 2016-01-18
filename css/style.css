@@ -359,3 +359,29 @@ img.tee2 {
 margin: 10px 10px 0px 30px;
 height: 200;
   width: 100px;}
+
+.resources {
+background-color: #bf8b18;
+border: 5px solid #bf8b18;
+margin: 10px 0px 20px 210px;
+width: 800px;
+height: 300px;
+display: flex-inline;
+text-align: left;
+flex-direction: row;
+padding: 10px;}
+
+.fam3{
+  margin: 10px 0px 20px 500px;
+}
+.family {
+/* background-color: #bf8b18; */
+/* border: 5px solid #bf8b18; */
+margin: 10px 0px 20px 20px;
+width: 300px;
+height: 300px;
+display: flex;
+text-align: center;
+flex-direction: row;
+padding: 10px;}
+/*TABLE*/
